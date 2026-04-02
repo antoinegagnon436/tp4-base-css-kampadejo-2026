@@ -38,7 +38,7 @@
 }
 
 .nav__control:focus {
-    outline: 2px solid #dba70d;
+    outline: 2px solid var(--jaune);
     outline-offset: 2px;
 }
 
@@ -96,18 +96,18 @@
 /* Desktop */
 @media (min-width: 40rem) {
     .nav__link:hover {
-        color: #dba70d;
+        color: var(--jaune);
     }
 
     .nav__link:focus {
         outline: none;
-        color: #dba70d;
-        border-bottom: 5px solid #dba70d; 
+        color: var(--jaune);
+        border-bottom: 5px solid var(--jaune); 
     }
 
     .nav__link--active {
-        border-bottom: 5px solid #dba70d;
-        color: #dba70d;
+        border-bottom: 5px solid var(--jaune);
+        color: var(--jaune);
     }
 }
 
