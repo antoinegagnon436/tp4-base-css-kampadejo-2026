@@ -37,7 +37,7 @@
     color: inherit; 
 }
 
-.nav__control:focus {
+.nav__control:focus-visible {
     outline: 2px solid var(--jaune);
     outline-offset: 2px;
 }
@@ -74,24 +74,27 @@
 
 /* Liens du menu */
 .nav__link {
-    display: block;
+    display: flex;
     padding: 10px;
     text-decoration: none;
     color: #ffffff;
     transition: all 0.3s;
 }
 
-/* Mobile*/
-@media (max-width: 39.9rem) {
-    .nav__link:hover {
-        color: var(--color-yellow);
-    }
-    
-    .nav__link--active {
-        border-left: 5px solid var(--color-yellow);
-        color: var(--color-yellow);
-    }
+.nav__link:focus-visible {
+    border-bottom: 0;
+    border-left: 7px solid var(--jaune);
 }
+
+.nav__link:hover {
+    color: var(--jaune);
+}
+    
+.nav__link--active {
+    border-left: 5px solid var(--jaune);
+    color: var(--jaune);
+}
+
 
 /* Desktop */
 @media (min-width: 40rem) {
